@@ -5,6 +5,10 @@ window.addEventListener('load', loadeverything)
 
 function loadeverything() {
 	changeoninterval();
+	var tochange = document.getElementById('tochange');
+	for (var i = 12; i >= 1; i--) {
+		tochange.src = i.toString(10) + ".jpg";
+	}
 	window.setInterval(changeoninterval, 5000);
 	if (document.getElementsByClassName("scroller").length > 0) {
 		window.setTimeout(scrolleron, 100);
