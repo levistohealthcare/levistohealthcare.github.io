@@ -229,3 +229,17 @@ a {
 #selected {
 	border-color: rgba(66, 135, 245, 1);
 }
+
+#sparkle {
+	height:20px;
+	width:20px;
+	fill:#zzzzzz;
+	border-radius:50%;
+	animation:sparkleanim 1s alternate;
+}
+
+@keyframes sparkle {
+	0% {
+		
+	}
+}
