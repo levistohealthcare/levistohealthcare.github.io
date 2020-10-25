@@ -235,11 +235,21 @@ a {
 	width:20px;
 	fill:#zzzzzz;
 	border-radius:50%;
-	animation:sparkleanim 1s alternate;
+	animation:sparkleanim 5s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
 }
 
-@keyframes sparkle {
+@keyframes sparkleanim {
 	0% {
-		
+		left: 0;
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		left: 320px;
+		opacity: 0;
 	}
 }
